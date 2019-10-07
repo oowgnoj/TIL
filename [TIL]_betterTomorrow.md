@@ -175,12 +175,47 @@ fetch 에 변수를 추가해서..
 
 # 10/7
 
-1. 프로그래밍 설계 관련 블로깅 계획
-   - 
-   - 
-   - 
-   - 
-2. React Todolist 완성 
+1. ~~프로그래밍 설계 관련 블로깅 계획~~~
+2. ~~React Todolist 완성 ~~
+
+
+
+#### 오늘의 느낀점 : 설계. 설계. 또 설계
+
+처음 리액트로 Todolist를 만들어 봤다. 시작하자마자 기존에 했던 설계와는 다른 방향으로 흘러갔다. 그럼에도 재차 설계를 하지않고, 그때 그때 기능을 추가하고, 구조를 바꾸는 방향으로 진행했다.
+
+이번에 앱을 만들기 전에 철저하게 설계를 하고 만들었으면 어땠을까 하는 궁금증이 든다.
+사실 이번에는 설계의 중요성을 느낄만한 경험은 아니였다. 하지만  state의 구조나, 변수, 최상위 component에 부모 컴포넌트를 추가할 때 '이러면 안되겠다 하는 생각이 들었다'. 간단하게 생각해보면 이번 todolist를 서버와 db까지 연결하고 배포까지 한다면, 내가 코딩을 하며 짰던 자료구조는 db schema 구조에 전혀 적합하지 않을 수도 있고 정말 뒤엎어야하는 상황이 올 수도 있다. 
+
+이번 기회로 설계에 대한 나만의 matrix를 구축해보자 자료조사와 블로깅을 시작하려고 한다. 애초에 무엇을 할 때 부딫혀보고 수정을 통해서 (agile..?) 하는 방식으로 배워왔기 때문에 나만의 matrix가 필요하다.
+
+
+
+#### 5분 개념
+
+1. React virtual DOM  : 실제 DOM 에서 랜더링 하기 전에, 변경된 부분을 javascript tree객체처럼 먼저 비교한 후에 바뀐부분만 rendering 에 적용
+
+   virtual dom 최적화 ? 부모 컴포넌트가 리렌더링 되면, 자식 컴포넌트들 또한 리 렌더링 됩니다.
+
+   
+
+2. destructuring
+
+   mdn definition : unpack values from arrays, properties from object into distinct variables
+
+````
+//Object destructuring
+var o = {p:42, q: true}
+var {p, q} = 0
+console.log(p) //45
+console.log(q) //true
+````
+
+
+
+<img src="/Users/jongwoopark/Dropbox/Screenshots/Screenshot 2019-10-07 15.12.51.png" alt="Screenshot 2019-10-07 15.12.51" style="zoom:50%;" />
+
+
 
 
 
