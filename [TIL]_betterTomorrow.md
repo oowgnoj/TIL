@@ -219,7 +219,105 @@ console.log(q) //true
 
 
 
+# 10/8
 
+1. 앤트디자인?
+2. react 달력?
+
+
+
+
+
+### event loop
+
+https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=youtu.be
+
+
+
+Single thread 
+
+
+
+blocking : things that are slow
+
+$1 --- $2 ... slow
+
+the solution : asynchronous callbacks
+
+event
+
+https://www.youtube.com/watch?v=8aGhZQkoFbQ&feature=youtu.be
+
+
+
+
+
+## 복습: 클라이언트 요청 GET / POST
+
+#### GET 요청
+
+1.  주소값을 이용해 요청을 하는 방식
+
+2. 서버측 주소 끝에 ? 붙이고, `key1=value1&key2=value2`...
+
+   Query String : 실제 주소값 뒤에 붙여가는 값
+
+#### POST 요청
+
+##### POST는 주소만 요청하고 변수와 값을 주소가 아닌 BODY에 담아 서버측에 요청
+
+Header : 요청에 대한 설정정보가 담김
+
+Body : 실제 데이터가 담김
+
+
+
+
+
+
+
+## 서버 : 제공을 하는 주체
+
+http protocol을 통해 통신해서 API를 제공하는 주체
+
+routing(라우팅)? 조건에 따라 분기를 하는 역할.
+
+저장
+
+1. javascript object에 저장 할 수 있다.
+
+2. POST(fs.wrtieFIle 모듈 활용) , GET(fs.readFile)
+
+   (1). object / array -> filesyste,
+
+
+
+API 문서 작성하기
+
+API를 만들고 문서화까지 하는 것이 API 제작이다. 
+
+1. API 사용법(method, router, etc)
+2. 기대되는 return data 형식 및 예제
+
+
+
+#### node js 에서 event 사용
+
+Node js 는 이벤트 기반 비동기 방식의 서버 프레임워크
+
+- EventEmitter : 모든 이벤트처리가 정의된 기본 객체. 
+
+- on() : 이벤트를 연결하는 함수
+
+  ```javascript
+    // 2. request객체에 on( ) 함수로 'data' 이벤트를 연결
+    request.on('data', function (data) {
+      // 3. data 이벤트가 발생할 때마다 callback을 통해 postdata 변수에 값을 저장
+      postdata = postdata + data;
+    });
+  ```
+
+   'data'라는 이벤트를 캐치해서 사용했었는데 모든 이벤트처리는 이런 동일한 루틴
 
 
 
