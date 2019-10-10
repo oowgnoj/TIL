@@ -321,3 +321,14 @@ Node js 는 이벤트 기반 비동기 방식의 서버 프레임워크
 
 
 
+# 10/09
+
+1. functional programming 관련 영상
+
+2. javascript runtime 관련 영상 
+
+   JS conf youtube
+
+3. Chatter-box -server 진행사항 혹은 보충사항
+
+   

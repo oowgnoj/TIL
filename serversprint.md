@@ -53,10 +53,28 @@ routing(라우팅)? 조건에 따라 분기를 하는 역할.
 
 API 문서 작성하기
 
+API 관련설명
+
+1. fetch
+
+   GET 방식을 보냈을 때 우리 서버 / DB 에 가지고있는 데이터를 전부 보내주는 것
+
+2. send
+
+3. clearmessage
+
+4. rendermessage
+
+5. updateRoomlist
+
+6. refreshchats
+
+7. sendchat
+
+8. Crea
+
 API를 만들고 문서화까지 하는 것이 API 제작이다. 
 
 1. API 사용법(method, router, etc)
 2. 기대되는 return data 형식 및 예제
-
-
 
