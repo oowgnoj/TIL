@@ -332,3 +332,202 @@ Node js 는 이벤트 기반 비동기 방식의 서버 프레임워크
 3. Chatter-box -server 진행사항 혹은 보충사항
 
    
+
+# 10/10
+
+### codestates
+
+1. severside chatterbox 끝
+2. package json
+3. CORS 정리
+4. RESTFUL API
+
+
+
+##### package.json
+
+### blogging
+
+
+
+### reading
+
+1. Node.js concurrency with async/await and promises
+
+   https://medium.com/platformer-blog/node-js-concurrency-with-async-await-and-promises-b4c4ae8f4510
+
+- concurrency(동시운전) : two or more process run together, **but not at the same time**
+
+- parallelism  : run in parallel
+
+
+
+2. 
+
+
+
+### 기타
+
+
+
+#10/11
+
+###codestates
+
+- 아. Toy problem..
+
+- modules and exports.modules
+
+  - exports 는 한개만 exports 하는 것이고,  modules.exports 는 여러개 한거번에 export
+
+  - 내일 자세한 것 기록
+
+  - module.exports === exports
+
+    require : exports 아래에 있는 객체를 return
+
+    
+
+    **react 에서 사용하는 export와 commonJS의 exports는 다름*
+
+- Express : philosopjy
+
+  - http 서버를 위한 작지만 각령한 툴을 제공하는 프레임워크
+  - mddileware (중간 공정?)
+
+
+
+- office hour - client 
+
+  - 프론트엔드 개발자를 위한 문서를 작성할 수 있다. 
+
+    - 어떤 url에 어떤 methods 를 사용하면 어떤 형식으로 된다.
+
+  - Package json
+
+    - Dependency vs devdependency
+    - 프로그램에 실질적 영향 vs 유틸화된 것 들. (환경적인 것)
+
+  - node modules
+
+    - npm 깔지 않아도 http, fs, path, 등등 사용 가능
+
+  - client 와 server 는 완벽히 독립적
+
+  - database?
+
+  - serverless
+
+    - 서버가 없이도 동작할 수 있는 시대 => 
+      cloud system : 서버가 없어도 가능. serverless
+
+      
+
+###blogging
+
+
+
+- 서버
+  - node js 
+  - js conf about event loop
+
+[node js]
+
+stream and event emitter
+
+모든 스트림은 eventEmitter의 instance 입니다.
+
+````javascript
+ 
+````
+
+
+
+events emitter : 라디오가 전파를 보내는 것 과 같음
+
+event listener : event가 어떤 특정한 신호를 보냈을 때, reacts to it
+
+그렇다면 이게 실제로 적용이 어떻게 될까?
+
+Node.js : built-in events module called :
+
+
+
+
+
+모든 스트림은 eventEmitter의 instance 입니다.
+
+스트림의 종류
+
+1. readable : 읽기 가능한 스트림
+2. Writable : 쓰기 가능
+3. duplex : 읽기/쓰기 모두 가능
+4. Transform : 기본적으로 duplex stream, 
+
+
+
+`readableScr.pipe(writableDest)`
+
+읽기 가능한 스트림에서 pipe를 통해 write 할 수 있는 destination과 연결해주는 것
+
+
+
+stream event
+
+읽기 가능한 스트림으로부터 읽거나 쓰기 가능한 스트림으로스는 것 외에도 pipe메소드는 자동으로 몇가지 작업을 관라힙니다. 예를 들어, 에러 처리나 파일의 끝부분 처리, 그리고 어떤 스트림들이 다른 것들에 비해 느리거나 빠를 경우를 처리합니다.
+
+하지만 스트림은 직접 이벤트와 함께 사용할 수 있다. 
+Pipe method가 데이터를 읽고 쓰기 위해 주로 하는것은
+
+`````
+readable.on('data', (chuck)=> {
+	writable.write(chuck)
+})
+
+readable.on('end', ()=>{
+	writable.end();
+})
+`````
+
+![Screenshot 2019-10-11 19.23.10](/Users/jongwoopark/Dropbox/Screenshots/Screenshot 2019-10-11 19.23.10.png)
+
+Request 는 readable stream이기 때문에, data end 사용 가능합니다.
+
+
+
+- middleware(express )
+- ![image-20191011221000004](/Users/jongwoopark/Library/Application Support/typora-user-images/image-20191011221000004.png)
+
+![Screenshot 2019-10-11 22.13.43](/Users/jongwoopark/Dropbox/Screenshots/Screenshot 2019-10-11 22.13.43.png)
+
+1. middle of something and that is requst and response cycle
+2. middleware has access to request and response object
+3. middleware has access to next function of request-resonse life cycle
+
+=- 
+
+
+
+###reading
+
+git branch 관리
+
+###기타
+
+
+
+#10/
+
+###codestates
+
+
+
+###blogging
+
+
+
+###reading
+
+- github branch 등등
+
+###기타
