@@ -520,7 +520,23 @@ git branch 관리
 
 ###codestates
 
+- Asynchronou s javascript
 
+  - 비동기란?
+
+    자바스크립트에서 어떤 코드가 완료되지 않아도 다음 줄 코드를 실행하는 것.
+
+    pending : 비동기 전부 밑에까지 실행이 아직 안된상태
+
+    냅
+
+  - callback
+
+  - promise
+
+  - async await
+
+- 
 
 ###blogging
 
