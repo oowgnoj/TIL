@@ -516,7 +516,7 @@ git branch 관리
 
 
 
-#10/
+#10/12
 
 ###codestates
 
@@ -528,7 +528,7 @@ git branch 관리
 
     pending : 비동기 전부 밑에까지 실행이 아직 안된상태
 
-    냅
+    
 
   - callback
 
@@ -545,5 +545,69 @@ git branch 관리
 ###reading
 
 - github branch 등등
+
+###기타
+
+
+
+
+
+#10/13
+
+###codestates
+
+- promise 마치기
+  - 
+
+###blogging
+
+- github branch
+- promise
+- 
+
+###reading
+
+- promise 관련해서 블로깅 1개정도
+
+###기타
+
+- 교보에서 책 읽기
+- 
+
+
+
+#10/14
+
+###codestates
+
+- compose, pipe
+
+###blogging
+
+###reading
+
+- Sprint.promise example, lib 보기
+
+- https://medium.com/javascript-scene/reduce-composing-software-fe22f0c39a1d
+- https://jrsinclair.com/articles/2019/compose-js-functions-multiple-parameters/
+- https://www.codementor.io/michelre/use-function-composition-in-javascript-gkmxos5mj
+
+###기타
+
+
+
+#10/15
+
+###codestates
+
+- SCHEMA AND QUERY DESIGN
+- 관계, 관계를 표현하는 방법.
+- 어떻게 데이터베이스를 효과적으로 구성할 수 있는지. 
+
+###blogging
+
+- 서버사이드 디버깅 하는 방법
+
+###reading
 
 ###기타
