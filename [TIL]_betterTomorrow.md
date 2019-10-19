@@ -611,3 +611,120 @@ git branch 관리
 ###reading
 
 ###기타
+
+
+
+#10/16
+
+###codestates
+
+###blogging
+
+###reading
+
+###기타
+
+- 프로그래밍으로 ''놀 수 있는 방법''
+  - 내가 프로그래밍으로 놀 수 있는 방법에는 뭐가 있을까.
+  - 간단하게 promise를 공부한다고 하면, 안에 내용을 marry me 처럼 친숙한 내용으로 code를 짜보는 방법.
+  - 개념에대해서 공부한다고 하면, 나였으면 어떻게 만들었을지 먼저 상상하고 배우는 법.
+- Sequalize cli -> 부트스트래핑 하게 뭔가 만드는거..
+
+
+
+#10/17
+
+###codestates
+
+- 
+
+###blogging
+
+- 
+
+###reading
+
+- 추상화를 위한 질문 3단계
+  1. 얻은 지식은 무엇인가
+  2. 그 지식이 무엇이 흥미로운가
+  3. 그 지식을 다른 분야에 적용한다면, 어떤 시사와 통찰이 있는가.
+
+###기타
+
+
+
+
+
+#10/18
+
+###codestates
+
+- shortly express
+  1. shortly express 코드 둘러보기
+  2. directory 확인
+  3. user flow api 생성
+  4. authentication session
+  5. 암호화, 세션 적용
+  6. advanced challenge
+
+###blogging
+
+- promise, async awiat , getnerator 함수 소개 https://poiemaweb.com/es6-generator
+
+  
+
+###reading
+
+- 포이마 웹 정규표현식 https://poiemaweb.com/js-regexp
+
+###기타
+
+
+
+##### 세션과 쿠키가 왜 생겼는지.
+
+http 프로토콜의 특징이자 약점을 보안하기 위해
+
+1. **비연결지향** : request -> response 그리고 연결 끊어서
+2. **상태정보 유지안함** 연결을 끊는 순간 클라이언트와 서버의 통신 끝남 : 리소스 줄이는 것에는 좋지만, 
+
+
+
+cookie : **서버**가 클라이언트 정보 저장, 불러올 수 있는 수단. 
+
+![Screenshot 2019-10-18 15.16.18](/Users/jongwoopark/Dropbox/Screenshots/Screenshot 2019-10-18 15.16.18.png)
+
+**session** : 
+
+Definition
+
+일정 시간동안 같은 브라우저로부터 들어오는 일련의 요구를  : 
+**request header에 있는 브라우저 고유의 속성값으로 진행하려나?**
+
+하나의 상태로 보고 : 
+**server에서 하나의 세션값을 만들어?**
+
+그 상태를 유지하는 기술 
+: **그 세션값을 저장하나?**
+
+process
+
+1. 클라이언트가 서버에 접속시 세션 아이디 발급
+2. 세션 ID를 쿠키를 사용해 저장
+3. 클라이언트는 다시 접속할 때, 
+4. 쿠키 사용해서, 
+5. 세션 ID값을 서버에 전달
+
+
+
+token :
+
+인증을 위해 사용되는 암호화된 문자열
+
+
+
+① 사용자가 로그인 한다. (로그인 정보를 서버로 request)
+  ② 서버는 request가 들어오면 DB를 쿼리 하여 사용자를 검증하고 유효할 경우 사용자의 고유한 ID값을 부여하여      세션 저장소에 저장한 후, 이와 연결되는 세션 ID를 생성하여 response header에 포함시켜 반환한다.
+  ③ 사용자는 서버에서 해당 세션ID를 받아 쿠키에 저장을 한 후, 제한된 end point(인증이 필요한 요청)에 접근할 때 마다      쿠키를 request header에 포함시켜 보낸다.  
+④ 서버에서는 쿠키를 받아 세션 저장소에서 검증한 후 요청에 해당하는 데이터를 반환한다. 세션과 쿠키를 요약하면 이런것 같아요
+
