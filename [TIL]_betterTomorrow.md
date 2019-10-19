@@ -728,3 +728,125 @@ token :
   ③ 사용자는 서버에서 해당 세션ID를 받아 쿠키에 저장을 한 후, 제한된 end point(인증이 필요한 요청)에 접근할 때 마다      쿠키를 request header에 포함시켜 보낸다.  
 ④ 서버에서는 쿠키를 받아 세션 저장소에서 검증한 후 요청에 해당하는 데이터를 반환한다. 세션과 쿠키를 요약하면 이런것 같아요
 
+#10/19
+
+### HA
+
+- callback 
+  - ~~toy~~
+  - SA
+- queue, stack, tree  구현
+
+###codestates
+
+- HA - (https://www.notion.so/51615d70dfb94613bc469767b36fa71a)
+
+  - 체크포인트 모두 리뷰
+
+  - 깃 기본 명령어
+
+  - 개념
+
+    - HTTP
+    - callback
+    - node
+    - OOP
+      
+
+  - 코드문제
+
+    - 시간복잡도
+
+    - 자료구조
+
+      - queue, stack, tree 구현할 줄 알기
+
+      - 상속
+
+      - node exports vs modules.exports
+
+      - node fs write and review
+
+      - 비동기, 콜백
+
+      - 리액트
+
+        
+
+###blogging
+
+- 
+
+###reading
+
+- 
+
+###기타
+
+- 
+
+
+
+개념 -> callback, 
+
+코드 ->  queue, stack, tree  구현, 시간복잡도, 상속 패턴
+
+
+
+#10/20 일
+
+### HA
+
+- 체크포인트 문제 다 풀기
+  - 모르는거 정리, 풀기
+- 시간복잡도, 상속패턴
+- 리액트
+
+###codestates
+
+- 
+- 
+
+###blogging
+
+- 
+
+###reading
+
+###기타
+
+
+
+#10/21 화
+
+###HA
+
+
+
+###codestates
+
+
+
+###blogging
+
+###reading
+
+###기타
+
+
+
+
+
+#10/22 수
+
+### HA
+
+
+
+###codestates
+
+###blogging
+
+###reading
+
+###기타
