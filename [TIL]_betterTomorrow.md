@@ -797,9 +797,44 @@ token :
 
 ### HA
 
-- 체크포인트 문제 다 풀기
+- ~~체크포인트 문제 다 풀기~~
+
   - 모르는거 정리, 풀기
-- 시간복잡도, 상속패턴
+
+    1. ~~scope~~
+
+    2. ~~closures~~
+
+    3. ~~this~~
+
+    4. ~~bigO (시간복잡도)~~~
+
+    5. new -> instantiation pattern 공부하고 해야함
+
+    6. ~~function binding~~
+
+    7. callbacks
+
+    8. values and reference type
+
+    9. order of execution
+
+    10. recastly
+
+    11. server
+
+    12. sql
+
+        
+
+- SA review
+
+- ~~tree~~
+
+- ~~시간복잡도~~ 
+
+- 상속패턴
+
 - 리액트
 
 ###codestates
@@ -813,15 +848,136 @@ token :
 
 ###reading
 
-###기타
+### 정리
+
+- lexical scope 
+
+  - https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Closures
+  - lexical scope는 해당 함수가 실행될 때 참고할 수 있는 변수들이다. 
+
+  
+
+  - ```javascript
+    
+    let user = {
+      firstName: "John",
+      sayHi() {
+        alert(`Hello, ${this.firstName}!`);
+      }
+    };
+    
+    setTimeout(user.sayHi, 1000); // Hello, undefined!
+    
+    console.log('------------------------------------------------------')
+    
+    
+    let user = {
+      firstName: "John",
+      sayHi() {
+        alert(`Hello, ${this.firstName}!`);
+      }
+    };
+    
+    setTimeout(function() {
+      user.sayHi(); // Hello, John!
+    }, 1000);
+    ```
+
+    1번 함수의 settimeout 에서 user.sayHi의 lexical scope는 window 객체 뿐이다. (setTimeout의 this = window이기 때문에)
+
+    2번 함수는 user.sayHi()를 function으로 감싸고 있다. 이 경우에 참조할 수 있는 값은 lexical scope가 closure로 함수가 만들어진 배경을 참조할 수 있기 때문에 , user객체에 접근이 가능하다.
+
+    그래서 해결책으로 1. wrapper를 감싸면 된다. 2. 함수의 this값을 강제로 지정해주는 bind도 가능하다. 
+
+    **call은 bind + 실행이니 유의해서 쓰도록 하자.
+
+    ````javascript
+    setTimeout(() => {user.sayHi()}, 1000)
+    setTimeout(user.sayHi.bind(user),1000)
+    ````
+
+- setTimeout 실행
+
+  ````javascript
+  var result = 10;
+  
+  function wait (time, f) {
+    setTimeout(function () {
+      result = f(result);
+    }, time);
+  }
+  
+  wait(500, function (x) { return x + 5 })
+  wait(250, function (x) { return x * 2 })
+  ````
+
+- reference type 관련
+
+- ````javascript
+  var player = { score: 3 };
+  
+  function doStuff(obj) {
+    obj = {};
+  }
+  
+  player = doStuff(player);
+  ````
+
+- callback
+
+  * 개념관련 
+
+    * javascript 자체적으로 아무리 callback을 사용한다고 해도 그게 잘 안됨.
+
+    ````javascript
+    var fs = require('fs');
+    var path = require('path');
+    
+    var getWordCount = function(filePath, callback) {
+      fs.readFile(filePath, 'utf-8', function(err, data) {
+        if (err) {
+          callback(err, null);
+          return;
+        }
+    
+        var wordCount = data.trim().split(' ').length;
+        callback(null, wordCount);
+      });
+    };
+    
+    var getTotalWordCount = function(filePathOne, filePathTwo, callback) {
+      // YOUR CODE HERE
+      getWordCount(filePathOne, (err, result) => {
+        //invoke getWordCount for 1st file read
+        if (err) {
+          callback(err, null);
+        } else {
+          let tempResult = result;
+          getWordCount(filePathTwo, (err, result) => {
+            if (err) {
+              callback(err, null);
+            } else {
+              callback(null, result + tempResult);
+            }
+          });
+        }
+      });
+    };
+    
+    module.exports = getTotalWordCount;
+    ````
+
+    
 
 
 
-#10/21 화
+
+
+#10/21 월
 
 ###HA
 
-
+- 
 
 ###codestates
 
