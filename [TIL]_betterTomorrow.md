@@ -759,7 +759,7 @@ token :
 
     - 자료구조
 
-      - queue, stack, tree 구현할 줄 알기
+      - ~~queue, stack, tree 구현할 줄 알기~~
 
       - 상속
 
@@ -827,7 +827,7 @@ token :
 
         
 
-- SA review
+- ~~SA review~~
 
 - ~~tree~~
 
@@ -977,6 +977,16 @@ token :
 
 ###HA
 
+- ~~블로깅 - 어제내용~~
+- ~~상속패턴 (new -> instantiation pattern 공부하고 해야함)~~
+- 리액트 (recastly)
+- checkpoints
+  - ~~function binding~~
+  - callbacks
+  - values and reference type
+  - order of execution
+  - server
+  - sql
 - 
 
 ###codestates
@@ -991,9 +1001,125 @@ token :
 
 
 
+### instantiation pattern
+
+1. functional : 
+
+   함수 만들고 그 안에 return 할 instance 한 다음에 거기다가 메소드 추가하고 난리 부르스.
+
+   * 상속할 때는 처음에 instnace = 부모 생성자
+
+````javascript
+const makeCar = function (name, brand) {
+  var car  = {}
+  
+  car.name = name
+  car.drive = () => console.log(brand + '부릉부릉')
+  return car
+}
+
+var test = makeCar('myCar','benz')
+console.log(test) //{ name: 'myCar', drive: [Function] }
+test.drive()//'benz부릉부릉'
+
+const makeToyCar = function (name, brand){
+  var toyCar = makeCar(name, brand)
+  
+  
+  return toyCar
+}
+
+var test = makeToyCar("bro's car", 'hyundai')
+test.drive()
+//'hyundai 부릉부릉'
+
+````
 
 
-#10/22 수
+
+
+
+1. psudoclassical 
+
+```javascript
+function Dancer (top, left, timeBetweenSteps){
+  //methods 실행할 것 
+  //혹은 this binding
+}
+
+Dancer.prototype.step = function () {
+  //stomethign
+}
+
+
+//왜 dancer 안에서 this.step 으로 정의해주지 않을까?
+  //1. 그럼 생성자 실행할 때 마다 메소드도 실행시켜줘야 해서 메모리 상..
+```
+
+ -> 상속
+
+````javascript
+function BlinkyDancer (top, left, time..){
+
+  //부모를 call 하는데 this(현재상황)에서 현재의 인자들을 가지고 부모와 똑같은 conetext 를 만들어 준다.
+    Dancer.call(this, top, left, time )
+}
+
+
+BlinkyDancer.prototype = Object.create(Dancer.prototype)
+BlinkyDancer.prototype.constructor = BlinkyDancer
+
+// 메소드를 상속받긴 했지만 blinkyDancer 만의 새로운 step
+BlinkyDancer.prototype.step =
+````
+
+
+
+2. ES6 new keyword
+
+````javascript
+class DanceClass {
+//constructor keyword -> instantiation 이 실행될 때 실행되는 부분
+  constructor(){
+    
+  }
+  
+  
+  //method 지정
+  step(){
+    
+  }
+  setPosition(top, left){
+    
+  }
+  
+}
+````
+
+=> 상속
+
+````javascript
+class BlinkyDancerClass extends DancerClass {
+  //construcor 에서 별다른게 없다면 생략 가능
+  constructor (top, left, timebewteenStepos){
+    //super -> 부모클래스를 실행할 수 있는 기능
+    super(top, left, timebewteenStepos) // == Dancer.call(this, 어쩌고 저쩌고)
+  }
+ 
+  step(){
+    super.step()
+    //어쩌고 저쩌고
+  }
+}
+````
+
+
+
+
+
+
+
+#10/22 화
 
 ### HA
 
