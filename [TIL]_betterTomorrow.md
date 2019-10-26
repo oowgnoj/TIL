@@ -979,15 +979,12 @@ token :
 
 - ~~블로깅 - 어제내용~~
 - ~~상속패턴 (new -> instantiation pattern 공부하고 해야함)~~
-- 리액트 (recastly)
+- ~~리액트 (recastly)~~
 - checkpoints
   - ~~function binding~~
-  - callbacks
-  - values and reference type
-  - order of execution
-  - server
-  - sql
-- 
+  - ~~callbacks~~
+  - ~~values and reference type~~
+  - 
 
 ###codestates
 
@@ -1123,6 +1120,24 @@ class BlinkyDancerClass extends DancerClass {
 
 ### HA
 
+- order of execution
+
+  server
+
+  sql
+
+  HA 1,2,3,4
+
+- 플젝 : 리액트
+
+- SA 1 -> reduce and map
+
+- SA 2
+
+- SA 3
+
+- SA 4
+
 
 
 ###codestates
@@ -1132,3 +1147,5 @@ class BlinkyDancerClass extends DancerClass {
 ###reading
 
 ###기타
+
+- lambda AWS function 위주, 서버리스,
