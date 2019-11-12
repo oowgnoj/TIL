@@ -1149,3 +1149,242 @@ class BlinkyDancerClass extends DancerClass {
 ###기타
 
 - lambda AWS function 위주, 서버리스,
+
+
+
+#10/28
+
+###codestates
+
+###blogging
+
+###reading
+
+###기타
+
+
+
+
+
+#10/29
+
+###Travel calculator
+
+* 스탠드업 미팅
+
+  * API / db 설계 공유 15분 (완료, 미완료, 시간이 얼마나 시간 더 필요할 지)
+
+  * 오늘 계획 5분 
+
+    * ~~db 설계~~
+
+    * 노션 페이지 SR 정리
+
+    * 예상소요시간, 시간  계획
+
+      * api 검증
+        * 레스토랑
+        * 항공권
+          * aceess token
+
+      
+
+      
+
+      * api 명세서 
+        * (호텔, 레스토랑, 항공권),  => 30분
+          * endpoint
+          * request, 
+          * response
+          *  data 형식
+
+      
+
+      
+
+      * client / server 구조 디자인 
+        * 나머지 시간
+        * 내부 서버 api 명세
+
+      
+
+      * git rule
+
+        * 45분 ~ 1시간
+
+      * 태스크 보드
+
+        
+
+* 어드밴스드 ; 
+
+  * 유저데이터 :default , 선택 ㄱㅏ능 / 어떤 도시를 검색하면 10분간 해당 도시는 count 안올라감
+
+  * 식비 평균 통계
+
+  * 검색기록 날짜 (time stapm) 기록해서 데이터 유지/보관 기간 설정 및 제거
+
+  * 도시명 : 공항명?
+
+    
+
+- 서버
+
+  - 호텔 api 
+  - 항공사, 식당, 등등의 사진
+    - 크기문제
+  - 로고
+  - 트렌드 
+  - 데이터베이스
+
+  
+
+###blogging
+
+###reading
+
+###기타
+
+도시 선택 Api 
+
+https://developers-dot-devsite-v2-prod.appspot.com/maps/documentation/javascript/places-autocomplete#map_controls
+
+
+
+duckduckgo API (search) -> 안되는 것 같음
+
+ 	
+
+cost of living index
+
+https://www.expatistan.com/cost-of-living/new-york-city
+
+https://www.numbeo.com/cost-of-living/in/Seoul
+
+
+
+https://beomi.github.io/2017/02/27/HowToMakeWebCrawler-With-Selenium/
+
+
+
+city 별 restuarnt price index,
+
+* NYC 기준 (100)
+
+https://www.numbeo.com/cost-of-living/rankings_current.jsp
+
+
+
+Travel Calculator
+
+유저는 
+
+(1) 도시, 날짜, *옵션을 입력합니다. (호텔 등급, 경유 횟수)
+
+(2) 숙박, 항공, 식비를 포함한 대략적인 여행경비를 계산할 수 있습니다.
+
+
+
+그니까 피쳐 브랜치를 빼서 작업을 하고 풀리퀘-머지 후에 다시 돌아간다는게 dev 브랜치로 다시 가서 pull을 한다는 건가요?
+
+
+
+저희 모든 팀원은 이번 프로젝트를 통해
+
+(1) 문제를 함께 해결하고
+
+(2) 
+
+
+
+
+
+https://www.numbeo.com/cost-of-living/rankings_current.jsp
+
+https://www.numbeo.com/cost-of-living/compare_cities.jsp?country1=United+States&country2=South+Korea&city1=New+York%2C+NY&city2=Seoul&tracking=getDispatchComparison
+
+
+
+식비 DB, 공항 DB 추가
+
+
+
+회원가입 페이지 -> 검색이랑 똑같이
+
+로그인 페이지
+
+
+
+: 10개정도 먼저 도시를 하고,  범위를 좁히고, 
+
+: 핵심기능을 베어미니멈으로 넣고, 
+
+
+
+단순하지만 말이 되는 ㅇ추천 알고리즘과 같다.
+
+어드밴스드면, 추천 알고리즘
+
+e commerce engine 지난 14기에서 
+
+aws personalize  ! 
+
+병렬적으로 
+
+
+
+JSON 서버
+
+fake ,server 만드는 것. 
+
+api 의 점진적 완성을 대비
+
+
+
+
+
+#10/31
+
+###프로젝트
+
+1. 프론트 antd design
+
+   Data display -> Avatar
+
+   Card - 그림 + 설명 : **호텔, 식당 카드**
+
+   
+
+progress : 검색할 때 다 선택해야하니까
+
+
+
+## 11 /1 
+
+미팅로그
+
+백로그 관련해서 경주님께서 추가해주셨고, 
+
+호텔 이미지
+
+조금 어려움.
+
+1차 2차, 
+
+[**주요 이슈**]
+
+1. 호텔 데이터 이미지 현재로서 어려움. *대안 : 성급 별 사진 / 이미지*
+2. 항공권 JSON data 최종안 업데이트 계획
+3. 11월 2일 토요일 19시 1차 배포 예정대로 진행
+
+[**공통**]
+
+1. Task Board :  Stand up meeting, 코드리뷰 시간에 간단하게 소개 후 카드 관리.
+
+2. 첫 코드리뷰 ! 19:30 - 20:15
+
+3. 프론트엔드 색 투표
+
+   Link :  https://www.webdesignrankings.com/resources/lolcolors/
+
+[**프론트**]
