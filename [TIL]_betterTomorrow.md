@@ -1388,3 +1388,46 @@ progress : 검색할 때 다 선택해야하니까
    Link :  https://www.webdesignrankings.com/resources/lolcolors/
 
 [**프론트**]
+
+
+
+
+
+
+
+
+
+
+
+#11/11
+
+###서書로모임
+
+
+
+TODO
+
+1. kanban board 업데이트
+
+2. 페이지 대충 기획해오기
+
+   
+
+
+
+ISSUE
+
+1. rendering 할 때 동영상처럼 chunk 로 
+2. 
+
+
+
+
+
+
+
+###blogging
+
+###reading
+
+###기타
