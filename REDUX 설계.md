@@ -1,3 +1,19 @@
+
+
+typscript and redux boilerplate
+
+https://velog.io/@velopert/use-typescript-and-redux-like-a-pro
+
+
+````
+
+$ npx create-react-app ts-react-redux-tutorial --typescript
+$ cd ts-react-redux-tutorial
+$ yarn add redux react-redux @types/react-redux
+```
+
+
+
 https://huns.me/development/1953
 
 ## 리듀서
@@ -382,3 +398,9 @@ Contatiner component
 중첩된 개체를 가지고 있거나, 사용자들이 개체를 편집할 수 있게 하고 싶다면 이들을 데이터베이스에 넣뜻이 상태에 분리해서 보관해야 합니다. 페이지 정보에는 이들의 ID만을 참조하게 하면 됩니다. 이를 통해 개체들을 항상 최신으로 유지할 수 있습니다.
 real world example 에서는 normalizr(npm package)를 통해 중첩된 API응답을 정규화하는 방법을 접근법을 보여줍니다.
 **Component 계층 설계**
+
+
+
+REDUX 도입 이유  
+「좀 더 예측 가능한 형태로 코드를 구조화하는 것」
+: 단방향 data flow
