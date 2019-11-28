@@ -1431,3 +1431,300 @@ ISSUE
 ###reading
 
 ###기타
+
+
+
+#11/15
+
+###bchar
+
+##### [front]
+
+
+**UI**
+
+- 빠진 부분: 서평 작성 시, 평점을 줄 수 있는 UI Design 
+  - 이 경우에, /ratings로 POST API요청을 보내서 평점 매기기
+- 서평 읽기 할 때, 서평을 쓴 사람이 부여한 평점을 내려주는 API / UI
+
+
+
+
+
+**DESIGN**
+
+- 컴포넌트 — 기본적으로 어떤게 들어갈지 정함
+- 리덕스 스토어, 액션, 리듀서 — 내일 점심이나 저녁까지 완료
+- 코딩 방향: presentational / container? 아니면 한 컴포넌트에서 모두 관리? 
+  - 추가적으로 공부하고 오늘 내일 안으로 다시 공유
+
+
+
+
+
+
+
+
+
+
+
+###blogging
+
+###reading
+
+###기타
+
+
+
+
+
+
+
+#11/17
+
+###project
+
+- ~~conditional rendering~~
+  
+  - ~~event?~~
+- ~~book mapping~~
+- ~~shared component?~~
+- 리덕스 관련
+  - db schema & API
+  - immutable.js
+
+- ### 책 제목 ()()제거 알고리즘!!
+
+
+
+1. [myInfo] 개인정보 수정 - 유저 / 유저의 책 관련 정보 수정
+
+   : *PATCH* /user
+   
+2. [myReview] 나의 서평 리스트
+
+   : *GET* /reviews?list_type=personal → 내가 쓴 서평
+   
+3. [myBooks] 책 카테고리 이동
+
+   : *PATCH /user*
+
+4. [myBooks] 책 추가
+
+   : *PATCH /user*
+
+5. [myBooks] 책 삭제
+
+   : *PATCH /user*
+
+6. [myReview] 공개 / 비공개 버튼 클릭 : *PATCH /reviews/:id
+
+**기존값 그대로 하고 published만 boolean 값 변경*
+
+7. [stats] 목표 수치 변경
+
+: *PATCH /user*
+
+
+
+
+
+
+
+1. [myReview] router로 서평 읽기 페이지로 넘어감
+
+   : <Link to = /reviews/:id>
+
+### [최상단 컴포넌트 에서 관리]
+
+1. [myTab]  state에 따른 선택적 렌더 (나의 서평, 차트, 내가 읽은 책) (onclick event & state) 
+   - 책의 info 버튼 을 누르면 분류에 따른 현재상태를 보여줘야 함 (state read) 
+     - 시작날짜 / 완독날짜
+
+
+
+
+
+###blogging
+
+###reading
+
+###기타
+
+
+
+
+
+#11/18
+
+###project
+
+
+
+## 오전 회의
+
+1. ~~immutable .js~~
+2. 마이페이지 책 잘 봐야겠어요
+   1. 읽고싶은 책 -< 
+
+
+
+##### 10:30 - 11:30 
+
+#### 1 - 2시
+
+https://github.com/typicode/json-server
+
+react 에서 fetch 연습
+
+
+
+#### 2-5시 redux team coding
+
+#### 7시 이후 : CSS 작업
+
+
+
+
+
+
+
+
+
+###blogging
+
+###reading
+
+###기타
+
+```javascript
+
+var Map = Immutable.Map;
+var fromJS = Immutable.fromJS;
+var List = Immutable.List;
+
+
+var data = fromJS(
+{
+ id: “ObjectId”,
+ email: “aaa@gmail.com”,
+ image: “http://...“,
+ name: “정혜경“,
+ profile: “저는 말이죠...“,
+ to_read: [ {
+   book: {
+     id: “ObjectId”,
+     authors: [ “도스토예프스키“, ‘aa’ ],
+     thumbnail: “http://...“,
+     title: “죄와 벌”
+   }
+ } ],
+ reading: [ {
+   book: {
+     id: “ObjectId”,
+     authors: [ “톨스토이” ],
+     thumbnail: “http://...“,
+     title: “안나 카레리나”
+   },
+   start: “10/29/2019",
+   goal: “12/13/2019”
+ } ],
+ finished: [ {
+   book: {
+     id: “ObjectId”,
+     authors: [ “단테” ],
+     thumbnail: “http://...“,
+     title: “신곡”
+   },
+   start: “11/15/2019",
+   end: “11/24/2019”,
+ } ],
+ numBooksGoal: 10,
+ numReviewsGoal: 10,
+ test : {test1:10, test2:{abc:2}}
+})
+
+const nextItem = {
+  ...selectedItem,
+  done: !selectedItem.done,
+};
+
+
+var test1 = data.getIn([‘reading’]).push(Map({book: {id: 123, authors: [“WHDDN”]}}))
+// test1.push({book: {id: 123, authors: [“WHDDN”]}})
+test1 = test1.toJS()
+console.log(test1)
+
+
+```
+
+https://velopert.com/3595
+
+
+
+#11/19
+
+###project
+
+ - drag and drop
+   	- https://medium.com/better-programming/how-to-build-a-drag-and-drop-grid-in-react-3008c5384b29
+   	- https://www.youtube.com/watch?v=930JPFaKg-s
+
+###blogging
+
+###reading
+
+###기타
+
+
+
+
+
+
+
+#11/20
+
+###project
+
+
+
+1. redux store 연결
+   1. User
+   2. 
+2. review fetch
+3. 
+
+###blogging
+
+###reading
+
+###기타
+
+
+
+## 11 / 27
+
+- 통계 나오기
+- 이미지 등록하지 않은 유저의 경우 미리보기 이미지 등록해둘 것
+- 공개 비공개 처리할 수 있게 버튼 추가
+- my likes 페이지에서는 이름 나오고, 내 서재에서는 내 이름 안나오게 하기
+- to read 에 있는 책들 고치기
+
+
+
+
+
+## 11 /28
+
+- 통계 나오기  : **통계 추후**~
+- 이미지 등록하지 않은 유저의 경우 미리보기 이미지 등록해둘 것
+- 공개 비공개 처리할 수 있게 버튼 추가
+- my likes 페이지에서는 이름 나오고, 내 서재에서는 내 이름 안나오게 하기
+- to read 에 있는 책들 고치기
+
+읽기를 제외한 모든 페이지 들어올 때 auth check
+
+
+
+redux thunk
+
