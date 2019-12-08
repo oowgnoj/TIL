@@ -1772,11 +1772,123 @@ redux thunk
 
 ## 11 / 30
 
-1. 그래프 마저 그리기
-2. 유저인포. 창 수정
-3. 패스워드 변경
-4. 배포
-
-
+1. 나의 책 수정
+   1. 그래프 마저 그리기
+2. 유저정보창 수정
+   1. 유저인포. 창 수정
+   2. 패스워드 변경
 
 ## 
+
+
+
+
+
+## 12/1
+
+1. Reading -> finish
+2. password 수정
+   1. Alert 및 redirect
+   2. 유저 빠짐 
+
+qkrwhddn!993tnwjd!4231!@#!@#!@#!@#!@#!@#!@#!@#!@
+
+
+
+
+
+
+
+
+
+### HOC
+
+​	is a function that takes a component and returns a new 
+
+
+
+
+
+
+
+## 12 / 2
+
+- 책 스켈레톤
+- HOC 리팩토링
+- 
+
+
+
+
+
+
+
+
+
+**배포 설명
+
+
+
+
+
+[생활코딩 / okky ]
+
+안녕하세요. 눈이 오기 시작하네요. 모두 눈길 조심하시고, 행복한 하루가 되셨으면 합니다.
+
+저희는 '書로 모임' 이라는 서평 공유 웹 어플리케이션을 기획했습니다. 서평 / 큐레이션을 작성하고 다른 유저들과 공유할 수 있는 플랫폼 입니다. 웹개발을 공부한지 6개월이 된 4명이 3주간 진행했고, 목표했던 기간이 일주 남았습니다. 남은 기간동안 실제 사용자들의 피드백을 받아 반영하고자 글을 남기게 되었습니다. 
+
+.  https://booktogether.org/
+
+
+
+사용한 스택은
+
+- 프론트 : typscript + react  + redux
+- 서버 : node.js, socket.io
+- db : mongodb  + ElasticSearch
+- deploy: s3 + cloudfront (client), elastic beanstalk (server)
+
+
+
+댓글이나 설문조사를 통해 피드백을 주시면 개선에 큰 도움이 될 것 같습니다. 감사합니다.
+
+설문조사 링크 :  https://docs.google.com/forms/d/e/1FAIpQLSfRA7SZrQVAwtAlqw2d8skeh9S5ZwN-wEMwFKld2tx3XUcl-g/viewform?usp=sf_link
+
+
+
+
+
+
+
+[ slack ]
+
+안녕하세요 15기 여러분 ㅎㅎ
+
+프로젝트 마지막주라 다들 정신이 없으실텐데, 배포 첫 버전을 여러분의 피드백을 받고자 글을 남기게 되었습니다.
+
+저희 프로젝트는 서평 / 큐레이션을 작성하고 다른 유저들과 공유할 수 있는 웹 어플리케이션 입니다. 사용해보시고 댓글 남겨주셔도 좋구요, 설문조사를 통해 피드백을 주시면 개선에 큰 도움이 될 것 같습니다. 감사합니다. S2
+
+.  https://booktogether.org/
+
+
+
+설문조사 링크 :  https://docs.google.com/forms/d/e/1FAIpQLSfRA7SZrQVAwtAlqw2d8skeh9S5ZwN-wEMwFKld2tx3XUcl-g/viewform?usp=sf_link
+
+
+
+
+
+
+
+
+
+# 12 / 6
+
+
+
+
+
+
+
+
+
